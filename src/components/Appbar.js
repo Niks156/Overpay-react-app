@@ -8,14 +8,14 @@ export default function Appbar({ loggedin }) {
   return (
     <>
       <Navbar bg="dark">
-        <Container>
+        <Container fluid>
           <Link style={{textDecoration:"none"}} to="/">
             <Navbar.Brand style={{ color: "white" }} href="/">
               <img
                 src={require("../img/logo.png")}
                 width="35"
                 height="30"
-                style={{ marginTop: -3, marginRight: 6 }}
+                style={{ marginTop: -3, marginLeft: 6 }}
                 alt="Overpay logo"
               />
               Overpay.
@@ -25,8 +25,7 @@ export default function Appbar({ loggedin }) {
           <Link to="/">
             <Button
               style={{ borderRadius: 12, background: "#194BFB" }}
-              // onClick={handlelogout}
-              className="mb-1 mt-1"
+              className="mb-1 mt-1 me-3"
               size="lg"
             >
               {loggedin ? "logout" : "sign in"}

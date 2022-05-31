@@ -2,29 +2,17 @@ import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import { Button } from "react-bootstrap";
 import OtpInput from "react-otp-input";
+import "../css/cardfp.css";
 
 export default function Cardauth() {
   const [code, setCode] = useState("");
 
   const handleChange = (code) => setCode(code);
-  const cardstyles = {
-    flex: {
-      width: "100%",
-      height: "100%",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-    },
-    boxshad: {
-      boxShadow: "0px 16px 24px rgba(93, 106, 131, 0.02)",
-      borderRadius: "16px",
-      padding: "20px 20px 30px 20px",
-    },
-  };
+
   return (
-    <div style={cardstyles.flex}>
-      <Card className="text-center" style={cardstyles.boxshaControld}>
-        <Card.Body>
+    <div className="c-flex">
+      <Card className="text-center c-box">
+        <Card.Body className="d-flex text-center flex-column justify-content-center ">
           <Card.Title>
             <h2 style={{ fontSize: 35 }}>Verify your email</h2>
           </Card.Title>
@@ -52,23 +40,20 @@ export default function Cardauth() {
               color: "#000",
               fontWeight: "400",
               caretColor: "blue",
-              marginLeft: 12,
             }}
             focusStyle={{
-              marginLeft: 12,
+              marginLeft: 45,
               border: "1px solid grey",
               outline: "none",
             }}
           />
           <Button
-            className="text-center mb-2 mt-3"
-            style={{ width: "400px", borderRadius: 12, background: "#194BFB" }}
+            className="text-center mb-2 mt-3 c-btn"
           >
             Verify Account
           </Button>
           <Card.Text
-            className="mt-3"
-            style={{ width: "340px", marginLeft: 14, color: "#718096" }}
+            className="mt-3 c-text2"
           >
             Resend code in
             <b> 59:00</b>

@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import "cardfp.css";
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+.logo-link {
+  font-weight: 700px;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+.logo-link:hover {
+  color: black;
+}
+
+.google-btn {
+  border-radius: 8px;
+  border: 1px solid #d3d3d3;
+  color: black;
+  background-color: #ffffff;
+  width: 350px;
+}
+.google-btn:hover {
+  border-radius: 8px;
+  border: 1px solid #d3d3d3;
+  color: black;
+  background-color: #ffffff;
+  width: 370px;
+}
+.google-btn img {
+  margin-right: 7px;
+  width: 24px;
+}
+.divider {
+  width: 23vw;
+}
+.divider div {
+  border-bottom: 1px solid #718096;
+  width: 100%;
+}
+.divider span {
+  color: #718096;
+  width: 19vw;
+}
+
+.signin-btn {
+  background-color: #194bfb;
+  border-radius: 12px;
+  width: 300px;
+}
+
+.signin-img {
+  height: 95vh;
+  margin-right: "auto";
+  width: 559px;
+}
+.signup-img {
+  height: 95vh;
+  margin-right: "auto";
+  width: 569px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .card h3 {
+    font-size: 30px;
+  }
+  .divider {
+    width: 80vw;
+  }
+  .divider span {
+    width: 50vw;
+  }
+
+  .signin-img {
+    width: 420px;
+    margin-left: -29px;
+    margin-top: 10px;
+  }
+  .signup-img {
+    width: 403px;
+    margin-left: -29px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 635px) {
+  .card h3 {
+    font-size: 34px;
+  }
+  .divider {
+    width: 50vw;
+  }
+  .divider span {
+    width: 30vw;
+  }
+  .signin-img {
+    width: 485px;
+    margin-left: -29px;
+    margin-top: 15px;
+  }
+  .signup-img {
+    width: 485px;
+    margin-left: -29px;
+    margin-top: 15px;
+  }
+}

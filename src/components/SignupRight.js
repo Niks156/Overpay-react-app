@@ -2,30 +2,19 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "../css/signin.css";
 
 export default function SignupRight() {
   return (
     <>
       <div
-        className="card h-75 border-0 d-flex justify-content-center align-items-center"
+        className="card h-75 border-0 text-center d-flex justify-content-center align-items-center"
         style={{ marginTop: "10.4vh" }}
       >
-        <h3 className="text-center font-weight-bold">Sign up for an account</h3>
-        <div className="text-center mb-3 text-muted">
-          Send, spend and save smarter
-        </div>
+        <h3 className="font-weight-bold">Sign up for an account</h3>
+        <div className="mb-3 text-muted">Send, spend and save smarter</div>
         <div className="d-flex justify-content-center align-items-center">
-          <Button
-            style={{
-              borderRadius: 8,
-              border: "1px solid #d3d3d3",
-              color: "black",
-              backgroundColor: "#ffffff",
-              width: 400,
-            }}
-            className="mb-4 mt-2 "
-            size="md"
-          >
+          <Button className="mb-4 mt-2 google-btn" size="md" style={{width:390}}>
             <img
               src={require("../img/google-color.png")}
               width="24px"
@@ -36,15 +25,10 @@ export default function SignupRight() {
           </Button>
         </div>
 
-        <div
-          className="d-flex align-items-center justify-content-center"
-          style={{ width: "25vw" }}
-        >
-          <div style={{ borderBottom: "1px solid #718096", width: "100%" }} />
-          <span className="px-1" style={{ color: "#718096", width: "19vw" }}>
-            Or with email
-          </span>
-          <div style={{ borderBottom: "1px solid #718096", width: "100%" }} />
+        <div className="divider d-flex align-items-center justify-content-center">
+          <div />
+          <span className="px-1">Or with email</span>
+          <div />
         </div>
 
         <Form>
@@ -62,15 +46,13 @@ export default function SignupRight() {
           </Form.Group>
           <Form.Group className="mb-4 mt-4" controlId="formBasicEmail">
             <Form.Control
-              className=" w-70"
+              className="mb-4 w-70"
               type="email"
               placeholder="Enter email"
             />
-          </Form.Group>
-
-          <Form.Group className="mb-4" controlId="formBasicPassword">
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
+
           <Form.Group className="mb-3">
             <Form.Text>
               By creating an account, you agreeing to our <b>Privacy Policy</b>,
@@ -78,14 +60,9 @@ export default function SignupRight() {
             </Form.Text>
           </Form.Group>
           <Form.Group className="d-flex justify-content-center align-items-center">
-            <Button
-              className="mb-3 mt-1 py-2"
-              style={{ backgroundColor: "#194BFB",borderRadius: 12,width: "300px" }}
-            >
-              Sign up
-            </Button>
+            <Button className="mb-3 mt-1 py-2 signin-btn">Sign up</Button>
           </Form.Group>
-          <Form.Group className="mb-3 text-center" controlId="formBasicEmail">
+          <Form.Group className="mb-3 text-center">
             <Form.Text>
               Already have an account?{" "}
               <b>
