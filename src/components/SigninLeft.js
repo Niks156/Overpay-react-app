@@ -84,6 +84,7 @@ export default function SigninLeft() {
             </Link>
           </Form.Group>
           <Form.Group className="d-flex justify-content-center align-items-center">
+            <Link to='/authentication'>
             <Button
               className="mb-3 mt-1 py-2"
               style={{
@@ -94,6 +95,8 @@ export default function SigninLeft() {
             >
               Sign in
             </Button>
+            </Link>
+            
           </Form.Group>
           <Form.Group className="mb-3 text-center" controlId="formBasicEmail">
             <Form.Text>
