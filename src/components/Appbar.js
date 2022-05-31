@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import { Container } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Appbar({ loggedin }) {
   return (
@@ -18,14 +19,16 @@ export default function Appbar({ loggedin }) {
             />
             Overpay.
           </Navbar.Brand>
-          <Button
-            style={{ borderRadius: 12, background: "#194BFB" }}
-            // onClick={handlelogout}
-            className="mb-1 mt-1"
-            size="lg"
-          >
-            {loggedin ? "logout" : "sign in"}
-          </Button>
+          <Link to="/">
+            <Button
+              style={{ borderRadius: 12, background: "#194BFB" }}
+              // onClick={handlelogout}
+              className="mb-1 mt-1"
+              size="lg"
+            >
+              {loggedin ? "logout" : "sign in"}
+            </Button>
+          </Link>
         </Container>
       </Navbar>
     </>
