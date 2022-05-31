@@ -9,16 +9,19 @@ export default function Appbar({ loggedin }) {
     <>
       <Navbar bg="dark">
         <Container>
-          <Navbar.Brand style={{ color: "white" }} href="/">
-            <img
-              src={require("../img/logo.png")}
-              width="35"
-              height="30"
-              style={{ marginTop: -3, marginRight: 6 }}
-              alt="Overpay logo"
-            />
-            Overpay.
-          </Navbar.Brand>
+          <Link style={{textDecoration:"none"}} to="/">
+            <Navbar.Brand style={{ color: "white" }} href="/">
+              <img
+                src={require("../img/logo.png")}
+                width="35"
+                height="30"
+                style={{ marginTop: -3, marginRight: 6 }}
+                alt="Overpay logo"
+              />
+              Overpay.
+            </Navbar.Brand>
+          </Link>
+
           <Link to="/">
             <Button
               style={{ borderRadius: 12, background: "#194BFB" }}

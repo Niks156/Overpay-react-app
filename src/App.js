@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Signup from "./components/Signup";
 import Signin from "./components/Signin";
 import Authentication from "./components/Authentication";
-import Forgetpassword from "./components/Forgetpassword";
+import Forgotpassword from "./components/Forgotpassword";
 import LoggedIn from "./components/LoggedIn";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/authentication" element={<Authentication />} />
-        <Route path="/forgetpass" element={<Forgetpassword />} />
+        <Route path="/forgotpass" element={<Forgotpassword />} />
         <Route path="/loggedin" element={<LoggedIn />} />
       </Routes>
     </>

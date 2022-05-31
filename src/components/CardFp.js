@@ -43,7 +43,9 @@ export default function CardFp() {
           >
             Send Link
           </Button>
-          <div className="text-center">Forgot your email?</div>
+          <div className="text-center">
+            <b>Forgot your email?</b>
+          </div>
         </Card.Body>
       </Card>
     </div>

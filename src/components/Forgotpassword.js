@@ -1,7 +1,7 @@
 import React from 'react'
 import Appbar from "./Appbar";
 import CardFp from './CardFp';
-export default function Forgetpassword() {
+export default function Forgotpassword() {
   return (
     <div>
       <Appbar />

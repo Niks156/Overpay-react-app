@@ -74,12 +74,12 @@ export default function SigninLeft() {
               type="checkbox"
               label="Remember me"
             />
-            <Link to="/forgetpass">
+            <Link to="/forgotpass">
               <Button
                 className="bg-white border-0 text-primary"
                 style={{ marginTop: -5, marginRight: 0 }}
               >
-                Forget Password?
+                Forgot Password?
               </Button>
             </Link>
           </Form.Group>
