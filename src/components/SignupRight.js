@@ -8,21 +8,26 @@ export default function SignupRight() {
   return (
     <>
       <div
-        className="card h-75 border-0 text-center d-flex justify-content-center align-items-center"
+        className="card c-marg h-75 border-0 text-center d-flex justify-content-center align-items-center"
         style={{ marginTop: "10.4vh" }}
       >
         <h3 className="font-weight-bold">Sign up for an account</h3>
         <div className="mb-3 text-muted">Send, spend and save smarter</div>
         <div className="d-flex justify-content-center align-items-center">
-          <Button className="mb-4 mt-2 google-btn" size="md" style={{width:390}}>
-            <img
-              src={require("../img/google-color.png")}
-              width="24px"
-              style={{ marginRight: 7 }}
-              alt="google"
-            />
-            Sign in with Google
-          </Button>
+          <Link to="/loggedin">
+            <Button
+              className="mb-4 mt-2 google-btn"
+              size="md"
+              style={{ width: 390 }}
+            >
+              <img
+                src={require("../img/google-color.png")}
+                style={{ marginRight: 7, width: 24 }}
+                alt="google"
+              />
+              Sign in with Google
+            </Button>
+          </Link>
         </div>
 
         <div className="divider d-flex align-items-center justify-content-center">

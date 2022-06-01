@@ -18,10 +18,12 @@ export default function SigninLeft() {
         <h3 className="font-weight-bold">Sign in to Overpay</h3>
         <div className="mb-3 text-muted">Send, spend and save smarter</div>
         <div className="d-flex justify-content-center align-items-center">
-          <Button className="mb-4 mt-2 google-btn" size="md">
-            <img src={require("../img/google-color.png")} alt="google" />
-            Sign in with Google
-          </Button>
+          <Link to="/loggedin">
+            <Button className="mb-4 mt-2 google-btn" size="md">
+              <img src={require("../img/google-color.png")} alt="google" />
+              Sign in with Google
+            </Button>
+          </Link>
         </div>
         <div className="divider d-flex align-items-center justify-content-center">
           <div />

@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-@import "cardfp.css";
+@import "card.css";
 .logo img {
   width: 40px;
   height: 40px;
@@ -19,19 +19,14 @@
   color: black;
 }
 
-.google-btn {
+.google-btn,
+.google-btn:hover,
+.google-btn:active {
   border-radius: 8px;
   border: 1px solid #d3d3d3;
   color: black;
   background-color: #ffffff;
-  width: 350px;
-}
-.google-btn:hover {
-  border-radius: 8px;
-  border: 1px solid #d3d3d3;
-  color: black;
-  background-color: #ffffff;
-  width: 370px;
+  width: 360px;
 }
 .google-btn img {
   margin-right: 7px;
@@ -57,17 +52,26 @@
 
 .signin-img {
   height: 95vh;
-  margin-right: "auto";
   width: 559px;
 }
 .signup-img {
   height: 95vh;
-  margin-right: "auto";
   width: 569px;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 500px) {
+@media only screen and (min-width: 0px) and (max-width: 490px) {
+  .card {
+    margin-left: -23px;
+    margin-right: 2px;
+  }
   .card h3 {
+    font-size: 30px;
+  }
+  .c-marg {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .c-marg h3 {
     font-size: 30px;
   }
   .divider {
@@ -78,17 +82,20 @@
   }
 
   .signin-img {
-    width: 420px;
-    margin-left: -29px;
-    margin-top: 10px;
+    width: 390px;
+    height: 80vh;
+    margin-left: -25px;
+    margin-top: 6px;
   }
   .signup-img {
-    width: 403px;
-    margin-left: -29px;
+    width: 383px;
+    margin-left: -30px;
+    height: 80vh;
+
     margin-top: 10px;
   }
 }
-@media only screen and (min-width: 500px) and (max-width: 635px) {
+@media only screen and (min-width: 490px) and (max-width: 635px) {
   .card h3 {
     font-size: 34px;
   }
@@ -99,13 +106,13 @@
     width: 30vw;
   }
   .signin-img {
-    width: 485px;
+    width: 475px;
     margin-left: -29px;
-    margin-top: 15px;
+    margin-top: 25px;
   }
   .signup-img {
-    width: 485px;
+    width: 475px;
     margin-left: -29px;
-    margin-top: 15px;
+    margin-top: 25px;
   }
 }

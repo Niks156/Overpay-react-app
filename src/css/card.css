@@ -1,0 +1,85 @@
+.c-flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-box {
+  box-shadow: 0px 16px 24px rgba(93, 106, 131, 0.02);
+  border-radius: 16px;
+  padding: 20px 20px 30px 20px;
+}
+.c-box-login {
+  box-shadow: 0px 16px 24px rgba(93, 106, 131, 0.02);
+  border-radius: 16px;
+  padding: 20px 20px 30px 20px;
+  margin-top: 20vh;
+  margin-bottom: 35vh;
+  margin-left: 20px;
+}
+.c-text {
+  width: 400px;
+  color: #718096;
+}
+.c-text2 {
+  width: 340px;
+  margin-left: 22px;
+  color: #718096;
+}
+.c-text-auth {
+  width: 370px;
+  margin-left: 10px;
+  color: #718096;
+}
+.c-text-login {
+  width: 400px;
+  font-size: 14.2px;
+  color: #718096;
+}
+.c-resp-inp {
+  margin-left: 35px;
+}
+.c-btn {
+  width: 390px;
+  border-radius: 12px;
+  background: #194bfb;
+}
+.c-btn-logout {
+  width: 390px;
+  border-radius: 12px;
+  background: #194bfb;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .c-box {
+    margin-left: 15px;
+  }
+  .c-box h2 {
+    font-size: 27px;
+    margin-left: 6px;
+  }
+  .c-flex {
+    width: 96%;
+  }
+
+  .c-btn-logout {
+    width: 290px;
+  }
+  .c-btn,
+  .c-text {
+    width: 315px;
+  }
+  .c-text2 {
+    margin-left: -10px;
+  }
+  .c-text-auth {
+    margin-left: -25px;
+  }
+  .c-text-login {
+    margin-left: -5px;
+  }
+  .c-resp-inp {
+    margin-left: 6px;
+  }
+}

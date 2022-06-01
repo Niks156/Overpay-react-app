@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import { Button } from "react-bootstrap";
-import "../css/cardfp.css";
+import "../css/card.css";
 
 export default function CardFp() {
   return (
