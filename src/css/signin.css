@@ -60,16 +60,20 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 490px) {
+  .logo {
+    margin-left: -14px;
+    margin-top: 5px;
+  }
   .card {
-    margin-left: -17px;
-    margin-right: 2px;
+    margin-left: -7px;
+    margin-right: -2px;
   }
   .card h3 {
     font-size: 30px;
   }
   .c-marg {
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 11px;
+    margin-right: 11px;
   }
   .c-marg h3 {
     font-size: 30px;
@@ -79,6 +83,9 @@
   }
   .divider span {
     width: 50vw;
+  }
+  .google-btn{
+    width: 350px;
   }
 
   .signin-img {
